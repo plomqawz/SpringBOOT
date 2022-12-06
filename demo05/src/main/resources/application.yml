@@ -1,0 +1,20 @@
+server:
+  port: 3355
+spring:
+  datasource:
+    dbcp2:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 1234
+    url: jdbc:mysql://localhost:3306/big9_spring?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+  devtools:
+    livereload:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
